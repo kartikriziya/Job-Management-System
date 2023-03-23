@@ -1,8 +1,8 @@
 <template>
-<div class="row py-5" style="background-color: ;">
-    <div class="col-sm-6 col-md-7 col-lg-8 col-xxl-9"></div>
-    <div class="col-sm-6 col-md-5 col-lg-4 col-xxl-3" style="background-color: ;">
-        <form class="row gap-3 needs-validation" novalidate>
+<div class="row py-3" style="background-color: ;">
+    <div class="col-sm-5 col-md-6 col-lg-7 col-xxl-8"></div>
+    <div class="col-sm-7 col-md-6 col-lg-5 col-xxl-4" style="background-color: ;">
+        <form class="row gy-2 needs-validation" novalidate>
             <div class="col-12">
                 <div class="form-floating">
                     <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com" required>
@@ -24,11 +24,11 @@
             <div class="col-12 ms-2">
                 <a href="#">Forgot Password?</a>
             </div>
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8 text-center d-grid">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 text-center d-grid">
                 <button @click.prevent="loginValidate()" class="btn btn-outline-success">Login</button>
             </div>
-            <div class="col-sm-2"></div>
+            <div class="col-sm-3"></div>
         </form>
 
     </div>

@@ -6,7 +6,7 @@
                 <!-- <a href="#">
                     <img alt="Vue logo" class="logo" src="../assets/logo.svg" width="125" height="125" />
                 </a> -->
-                <router-link :to="{ name: 'Home' }">
+                <router-link :to="{ name: 'home' }">
                     <img alt="Vue logo" class="logo" src="../assets/logo.svg" width="125" height="125" />
                 </router-link>
             </div>

@@ -1,11 +1,12 @@
 <template>
 <main>
     <h1>Main</h1>
-    <router-view></router-view>
+    <RouterView />
 </main>
 </template>
 
 <script>
+import { RouterView } from 'vue-router'
 
 export default {
     name: "Main",

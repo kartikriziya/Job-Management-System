@@ -1,5 +1,5 @@
 <template>
-<div class="row py-5" style="background-color: ;">
+<div class="row py-3" style="background-color: ;">
     <div class="col-sm-5 col-md-6 col-lg-7 col-xxl-8"></div>
     <div class="col-sm-7 col-md-6 col-lg-5 col-xxl-4" style="background-color: ;">
         <form class="row gy-2 needs-validation" novalidate style="background-color: ;">

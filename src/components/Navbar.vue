@@ -8,16 +8,16 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <!-- <a class="nav-link active" aria-current="page" href="/">Home</a> -->
-                    <router-link class="nav-link active" aria-current="page" :to="{ name: 'Home' }">Home</router-link>
+                    <router-link class="nav-link active" aria-current="page" :to="{ name: 'home' }">Home</router-link>
                 </li>
                 <li class="nav-item">
                     <!-- <a class="nav-link" href="/about">About Us</a> -->
-                    <router-link class="nav-link active" aria-current="page" :to="{ name: 'AboutUs' }">About Us</router-link>
+                    <router-link class="nav-link active" aria-current="page" :to="{ name: 'about' }">About Us</router-link>
                 </li>
                 
                 <li class="nav-item">
                     <!-- <a class="nav-link" href="/contact">Contact</a> -->
-                    <router-link class="nav-link active" aria-current="page" :to="{ name: 'Contact' }">Contact</router-link>
+                    <router-link class="nav-link active" aria-current="page" :to="{ name: 'contact' }">Contact</router-link>
                 </li>
             </ul>
             <ul class="navbar-nav d-flex">
