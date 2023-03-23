@@ -1,16 +1,31 @@
 <template>
-<div class="container-fluid">
+<div class="container home p-2">
     <h1>Home</h1>
-    <div class="container-fluid"></div>
+
+    <!-- Login-Component -->
+    <Login/>
+
+    <!-- SignUp-Component -->
+    <SignUp />
 </div>
 </template>
 
 <script>
+import Login from '../components/Login.vue'
+import SignUp from '../components/SignUp.vue'
+
 export default {
+    name: 'Home',
+    components: {
+        Login,
+        SignUp
+    },
 
 }
 </script>
 
-<style>
-
+<style scoped>
+.home {
+    background-color: lightgray;
+}
 </style>

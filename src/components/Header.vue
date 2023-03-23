@@ -37,7 +37,7 @@ header {
     cursor: pointer;
 }
 
-/* Small devices (landscape phones, 576px and up) */
+/* >=Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .brand {
         display: flex;

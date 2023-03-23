@@ -1,5 +1,5 @@
 <template>
-<div class="container-fluid">
+<div class="container about">
     <h1>About Us</h1>
 </div>
 </template>
@@ -10,6 +10,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.about{
+    background-color: blueviolet;
+}
 </style>
