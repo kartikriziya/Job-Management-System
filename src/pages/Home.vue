@@ -1,6 +1,7 @@
 <template>
   <div class="container home p-2">
     <h1>Home</h1>
+    hello
 
     <div class="row" style="background-color: ">
       <div
