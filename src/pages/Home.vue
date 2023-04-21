@@ -3,7 +3,31 @@
     <h1>Home</h1>
 
     <div class="row" style="background-color: ">
-      <div class="col-sm-6 col-md-7 col-lg-8 col-xxl-8"></div>
+      <div
+        class="col-sm-6 col-md-7 col-lg-8 col-xxl-8"
+        style="background-color: "
+      >
+        <div class="table-responsive">
+          <table class="table table-hover table-striped">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr v-for="user in users">
+                <th scope="row">{{ user.id }}</th>
+                <td>{{ user.first_name }}</td>
+                <td>{{ user.last_name }}</td>
+                <td>{{ user.email }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
       <div
         class="col-sm-6 col-md-5 col-lg-4 col-xxl-4"
         style="background-color: "
@@ -35,10 +59,34 @@
 
 <script>
 import { RouterView } from "vue-router"
+import { ref } from "vue"
+import axios from "axios"
 
 export default {
   name: "Home",
-  setup() {},
+  setup() {
+    const users = ref("")
+
+    // Get Method to get data from DB
+    // axios.get("http://localhost/Vue3/index.php").then((result) => {
+    //   users.value = result.data
+    //   console.log(result)
+    // })
+
+    // Post Method to send data to DB and get some response from DB or Backend
+    axios
+      .post("http://localhost/Vue3/index.php", {
+        action: "select_allUsers",
+      })
+      .then((result) => {
+        users.value = result.data
+        //console.log(result)
+      })
+
+    return {
+      users,
+    }
+  },
 }
 </script>
 

@@ -64,6 +64,8 @@ export default {
       if (loginEmail == "" || loginPassword == "") {
         needs.classList.add("was-validated")
         needs.classList.remove("needs-validation")
+      } else {
+        window.location.href = "/jobs"
       }
     }
 
